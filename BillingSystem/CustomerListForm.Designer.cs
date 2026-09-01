@@ -52,8 +52,12 @@
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(133, 25);
             lblTitle.TabIndex = 0;
-            lblTitle.Text = "Customer List - D.M.";
+
+            lblTitle.Text = "Customer List - A.N. + D.M.";
             lblTitle.Click += lblTitle_Click;
+
+            
+
             // 
             // dataGridView1
             // 
