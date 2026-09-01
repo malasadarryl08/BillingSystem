@@ -52,7 +52,7 @@
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(133, 25);
             lblTitle.TabIndex = 0;
-            lblTitle.Text = "Customer List";
+            lblTitle.Text = "Customer List - A.N.";
             // 
             // dataGridView1
             // 
