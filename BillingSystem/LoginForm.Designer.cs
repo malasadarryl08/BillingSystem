@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Text = "Billing System v1.0 – Login (N.)";
             lblTitle = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
@@ -44,9 +43,9 @@
             lblTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.Location = new Point(115, 24);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(163, 25);
+            lblTitle.Size = new Size(136, 25);
             lblTitle.TabIndex = 0;
-            lblTitle.Text = "BILLING SYSTEM";
+            lblTitle.Text = "Billing System";
             // 
             // lblUsername
             // 
@@ -98,13 +97,12 @@
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
-            
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(384, 261);
+            ClientSize = new Size(487, 261);
             Controls.Add(btnCancel);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
@@ -116,7 +114,8 @@
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Login";
+            Text = "Billing System v1.0 - Login (A.N.)";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
