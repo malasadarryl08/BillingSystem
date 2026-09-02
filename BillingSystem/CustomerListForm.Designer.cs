@@ -52,7 +52,12 @@
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(133, 25);
             lblTitle.TabIndex = 0;
-            lblTitle.Text = "Customer List";
+
+            lblTitle.Text = "Customer List - A.N. + D.M.";
+            lblTitle.Click += lblTitle_Click;
+
+            
+
             // 
             // dataGridView1
             // 
@@ -150,7 +155,11 @@
             Controls.Add(lblTitle);
             Name = "CustomerListForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Customer List(D.M.)";
+            feature/customerlist-malasa
+            Text = "Billing System - Customer List - A.N. + D.M.";
+=======
+            Text = "Billing System - Customer List - A.N. + D.M.";
+            Load += CustomerListForm_Load; main
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
