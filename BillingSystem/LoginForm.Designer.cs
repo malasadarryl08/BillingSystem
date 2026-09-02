@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Text = "Billing System v1.0 – Login (N.)";
+            
             lblTitle = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
@@ -116,7 +116,7 @@
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Login";
+            Text = "Billing System v1.0 – Login (N.)";
             ResumeLayout(false);
             PerformLayout();
         }
