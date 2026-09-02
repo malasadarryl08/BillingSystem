@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Text = "Billing System v1.0 – Login (N.)";
             lblTitle = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
@@ -103,7 +102,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(421, 261);
+            ClientSize = new Size(384, 261);
             Controls.Add(btnCancel);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
@@ -115,7 +114,7 @@
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Login";
+            Text = "Billing System v1.0 - Login (A.N.)";
             ResumeLayout(false);
             PerformLayout();
         }
