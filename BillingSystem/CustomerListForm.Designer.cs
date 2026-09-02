@@ -155,8 +155,11 @@
             Controls.Add(lblTitle);
             Name = "CustomerListForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Customer List";
-            Load += CustomerListForm_Load;
+            feature/customerlist-malasa
+            Text = "Billing System - Customer List - A.N. + D.M.";
+=======
+            Text = "Billing System - Customer List - A.N. + D.M.";
+            Load += CustomerListForm_Load; main
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
