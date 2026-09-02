@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Text = "Billing System v1.0 – Login (N.)";
             lblTitle = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
@@ -98,7 +97,6 @@
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
-            
             // 
             // LoginForm
             // 
@@ -116,7 +114,7 @@
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Login";
+            Text = "Billing System v1.0 - Login (A.N.)";
             ResumeLayout(false);
             PerformLayout();
         }
