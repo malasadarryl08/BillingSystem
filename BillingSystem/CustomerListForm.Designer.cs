@@ -50,14 +50,9 @@
             lblTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.Location = new Point(70, 54);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(133, 25);
+            lblTitle.Size = new Size(253, 25);
             lblTitle.TabIndex = 0;
-
             lblTitle.Text = "Customer List - A.N. + D.M.";
-            //lblTitle.Click += lblTitle_Click;
-
-            
-
             // 
             // dataGridView1
             // 
@@ -67,34 +62,41 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(644, 150);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // CustomerID
             // 
+            CustomerID.DataPropertyName = "CustomerID";
             CustomerID.HeaderText = "ID";
             CustomerID.Name = "CustomerID";
             // 
             // FullName
             // 
+            FullName.DataPropertyName = "FullName";
             FullName.HeaderText = "Full Name";
             FullName.Name = "FullName";
             // 
             // Address
             // 
+            Address.DataPropertyName = "Address";
             Address.HeaderText = "Address";
             Address.Name = "Address";
             // 
             // ContactNumber
             // 
+            ContactNumber.DataPropertyName = "ContactNumber";
             ContactNumber.HeaderText = "Contact No.";
             ContactNumber.Name = "ContactNumber";
             // 
             // Email
             // 
+            Email.DataPropertyName = "Email";
             Email.HeaderText = "Email";
             Email.Name = "Email";
             // 
             // Balance
             // 
+            Balance.DataPropertyName = "Balance";
             Balance.HeaderText = "Balance";
             Balance.Name = "Balance";
             // 
@@ -106,6 +108,7 @@
             btnAdd.TabIndex = 2;
             btnAdd.Text = "Add Customer";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
@@ -131,6 +134,8 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(146, 23);
             txtSearch.TabIndex = 5;
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            txtSearch.KeyPress += txtSearch_KeyPress;
             // 
             // btnSearch
             // 
@@ -140,6 +145,7 @@
             btnSearch.TabIndex = 6;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // CustomerListForm
             // 
@@ -155,9 +161,8 @@
             Controls.Add(lblTitle);
             Name = "CustomerListForm";
             StartPosition = FormStartPosition.CenterScreen;
-            //feature / customerlist - malasa;
             Text = "Billing System - Customer List - A.N. + D.M.";
-           // Load += CustomerListForm_Load; main
+            Load += CustomerListForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
