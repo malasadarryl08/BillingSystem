@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             lblTitle = new Label();
-            dataGridView1 = new DataGridView();
+            dgvCustomers = new DataGridView();
             CustomerID = new DataGridViewTextBoxColumn();
             FullName = new DataGridViewTextBoxColumn();
             Address = new DataGridViewTextBoxColumn();
@@ -41,7 +41,7 @@
             btnLogout = new Button();
             txtSearch = new TextBox();
             btnSearch = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
             SuspendLayout();
             // 
             // lblTitle
@@ -54,15 +54,16 @@
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Customer List - A.N. + D.M.";
             // 
-            // dataGridView1
+            // dgvCustomers
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FullName, Address, ContactNumber, Email, Balance });
-            dataGridView1.Location = new Point(70, 107);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(644, 150);
-            dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dgvCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomers.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FullName, Address, ContactNumber, Email, Balance });
+            dgvCustomers.Location = new Point(70, 107);
+            dgvCustomers.Name = "dgvCustomers";
+            dgvCustomers.Size = new Size(644, 150);
+            dgvCustomers.TabIndex = 1;
+            dgvCustomers.CellDoubleClick += dgvCustomers_CellDoubleClick;
+            dgvCustomers.SelectionChanged += dgvCustomers_SelectionChanged;
             // 
             // CustomerID
             // 
@@ -118,6 +119,7 @@
             btnDelete.TabIndex = 3;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnLogout
             // 
@@ -157,13 +159,13 @@
             Controls.Add(btnLogout);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvCustomers);
             Controls.Add(lblTitle);
             Name = "CustomerListForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Customer List - A.N. + D.M.";
             Load += CustomerListForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,7 +173,7 @@
         #endregion
 
         private Label lblTitle;
-        private DataGridView dataGridView1;
+        private DataGridView dgvCustomers;
         private DataGridViewTextBoxColumn CustomerID;
         private DataGridViewTextBoxColumn FullName;
         private DataGridViewTextBoxColumn Address;
